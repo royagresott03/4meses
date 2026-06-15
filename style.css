@@ -231,6 +231,9 @@ body {
     filter: saturate(0.9) brightness(0.95) hue-rotate(-5deg);
     box-shadow: 0 8px 18px rgba(10,12,46,0.25);
 }
+@media (max-width: 600px) {
+    .me_gusta { max-width: 100px; }
+}
 
 .image-container img {
     width: 100%;
