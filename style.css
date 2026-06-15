@@ -62,7 +62,7 @@ body {
 }
 
 .front {
-    background-color: #f7f3e8;
+    background-color: #FFFFBF;
     border-radius: 0 10px 10px 0;
     box-shadow: inset 4px 0 10px rgba(10,12,46,0.08), 5px 5px 15px rgba(0,0,0,0.3);
 }
@@ -85,7 +85,7 @@ body {
 }
 
 .back {
-    background-color: #f0ece0;
+    background-color: #FFFFBF;
     transform: rotateY(180deg);
     border-radius: 10px 0 0 10px;
     box-shadow: inset -4px 0 10px rgba(10,12,46,0.08), -5px 5px 15px rgba(0,0,0,0.3);
@@ -109,7 +109,7 @@ body {
 }
 
 .cover-front {
-    background-color: #0a0c2e;
+    background-color: #4B0082;
     color: #c9b86c;
     border-radius: 0 15px 15px 0;
     box-shadow:
@@ -136,14 +136,6 @@ body {
     letter-spacing: 0.04em;
 }
 
-/* Costura decorativa en portada — agregar <div class="cover-stitch"></div> al HTML */
-.cover-stitch {
-    border: 1.5px dashed rgba(201,184,108,0.3);
-    border-radius: 0 8px 8px 0;
-    position: absolute;
-    inset: 10px;
-    pointer-events: none;
-}
 
 .page.flipped {
     transform: rotateY(-180deg);
@@ -229,6 +221,17 @@ body {
     margin: 0.6rem 0 1rem 0;
 }
 
+.me_gusta {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    filter: saturate(0.9) brightness(0.95) hue-rotate(-5deg);
+    box-shadow: 0 8px 18px rgba(10,12,46,0.25);
+}
+
 .image-container img {
     width: 100%;
     max-width: 420px;
@@ -242,7 +245,7 @@ body {
 
 .cover-media img {
     width: 100%;
-    max-width: 420px;
+    max-width: 320px;
     height: auto;
     border-radius: 10px;
     display: block;
